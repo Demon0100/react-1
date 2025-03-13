@@ -28,4 +28,3 @@
 * package-lock.json : 설치된 패키지의 정확한 버전이 기록된 파일
 * package.json : 프로젝트의 의존성 목록과 실행 스크립트가 포함된 파일.
 * README.md : 프로젝트 설명 문서.
-ssss
