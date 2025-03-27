@@ -1,5 +1,42 @@
 # 202330215 송승헌
 
+# 2025.03.27 4주차
+
+### Component의 생성 및 nesting(중첩)
+#### component는
+1. 고유한 로직과 모양을 가진 UI의 일부.
+2. 버튼처럼 작을 수도, 전체 페이지처럼 클 수도 있다.
+3. 마크업을 반환하는 JavaScript 함수.
+
+#### export default와 export의 차이
+* Named Exports
+ - 하나의 파일안에 여러개의 component가 있을때 사용.
+ - component를 사용하는 쪽에서는 component 정확한 이름을 반드시 명시.
+* Default Exports
+ - 하나의 파일안에서 하나의 component만 내보내는 경우 사용.
+ - component를 사용하는 쪽에서는 어떤 이름을 사용해도 무관.
+
+### JSX로 마크업 작성하기
+앞에서 작성한 코드의 마크업 문법 : JSX
+#### JSX
+* JSX는 HTML보다 더욱 엄격한 문법을 적용
+* JSX에선 싱글 태그라도 태그를 닫아야함 ex: < />
+* React에선 여러개의 component를 JSX태그로 반환할 수 있다.
+  다만 여러개의 component를 wrapping 해줘야 한다.
+
+#### 스타일 추가하기
+* React에서는 className으로 CSS클래스를 지정한다.
+* className은 HTML의 class 속성과 동일한 방식으로 동작한다.
+* React는 CSS파일을 추가하는 방법을 규정하진 않는다.
+  -> 정적 페이지 작성때와 동일한 방법 지원
+* 가장 간단한 방법은 HTML에 link태그 추가하는것.
+
+#### 데이터 표시하기
+  JSX를 사용하면 자바스크립트에 마크업을 넣을 수 있다.
+  JSX 코드 내에서 JavaScript로 탈출하여 변수나 표현식을 사용하는 것이다.
+  {}중괄호를 사용해서 변수나 표현식을 사용자에게 표시하도록 하는것 이다.
+* 이 방법을 "Escape Back"이라고 한다.
+
 # 2025.03.20 3주차
 
 ### React Project의 구조 및 역할2
