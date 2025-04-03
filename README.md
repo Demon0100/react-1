@@ -1,5 +1,31 @@
 # 202330215 송승헌
 
+# 2025.04.03 5주차
+
+### Hook 사용하기
+* use로 사직하는 함수가 Hook이다
+* useState는 React에서 제공하는 내장 Hook이다
+* Hook은 다른 함수보다 더 제한적이다.
+  * component 또는 다른 Hook의 상단에서만 Hook을 호출할 수 있다.
+  * 조건이나 반복문에서 useState를 상용하고 싶다면 새 컴포넌트를 추출하여 그곳에 넣어야한다.
+
+#### Hook의 사용규칙
+! 왜 이런 규칙이 필요한가? : React의 동작을 예측 가능하고, 안정성을 높이기 위해 필요
+1. rendering 순서를 보장하기 위해
+
+  조건문이나 반복문 안에서 Hooks를 사용하면
+  매 rendering마다 Hook의 호출 순서가 달라질 수 있기 때문에
+  React가 상태를 제대로 추적할 수 없다.
+
+2. 불필요한 사이드 이펙트 방지
+
+  component가 여러번 rendering 될 때마다
+  동일한 순서로 Hook이 실행되어야 React가 의도한 동작을 수행할 수 있다.
+
+#### component 간 데이터 공유
+- 각 component 객체가 독립적으로 동작함
+- component는 하나지만 count 변수도 객체로 여러 개 복사된 것이나 마찬가지이기 때문입니다.
+
 # 2025.03.27 4주차
 
 ### Component의 생성 및 nesting(중첩)
