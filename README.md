@@ -1,5 +1,27 @@
 # 202330215 송승헌
 
+# 2025.04.10 6주차
+
+#### prop를 통해 데이터 전달하기
+1. React의 component architecture를 사용해서 재사용할 수 있는 component를 만들어서 지저분하고 중복된 코드 삭제
+2. Board component를 만들고, square component의 내용을 복사한다.
+3. square component의 button을 하나만 남기고 모두 삭제한다
+4. Board component의 button을 square component로 교체한다.
+5. App에서 호출하는 component를 square에서 Board로 바꿔준다.
+
+* 여기까지 할 시에 component는 깔끔하게 정리 되었지만, 숫자출력이 1만 나오게 된다.
+* 이 문제를 해결하기 위해 props를 사용하여 각 사각형이 가져야 할 값을 부모 component(Board)에서 자식 component(square)로 전달한다.
+* component를 호출하는 쪽이 부모 component이다.
+
+### state 끌어올리기
+* 여러 자식 컴포넌트에서 데이터를 수집하거나 두 자식 컴포넌트가 서로 통신하도록 하려면, 부모 컴포넌트에서 공유 state를 선언해야함.
+* 부모 컴포넌트는 props를 통해 해당 state를 자식 컴포넌트에 전달 할 수 있다.
+* 이러면 자식 컴포넌트가 서로 동기화 되고, 부모 컴포넌트와도 동기화 되도록 할 수 있다.
+* React 컴포넌트를 리팩토링할 때 부모 컴포넌트로 state를 끌어올리는 건 많이 사용되는 방법이다.
+
+### 
+
+
 # 2025.04.03 5주차
 
 ### Hook 사용하기
